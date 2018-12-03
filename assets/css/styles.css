@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Josefin+Slab');
+
+@font-face {
+    font-family: iconFont;
+    src: url("../images/linea.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+.hero-icon {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75px;
+}
+
+.nav-link {
+    color: grey;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.nav {
+    padding-top: 10px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 135px;
+}
+
+.about-me-container {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-bottom: 250px;
+    height: 450px;
+    z-index: 0;
+}
+
+.img-profile {
+    max-width: 350px;
+    height: auto;
+    position: relative;
+    left: 25%;
+    z-index: 2;
+}
+
+.profile-text {
+    background: #ecefec;
+    width: 500px;
+    position: absolute;
+    left: 60%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    z-index: 3;
+    text-align: justify;
+}
+
+hr {
+    background-color: white; 
+    height: 2px; 
+    border: 0;
+}
+
+.about-icon {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75px;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.experience-container {
+    /* background: #ecefec; */
+    background: rgb(214, 214, 214);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.experience-title {
+    color: white;
+    text-shadow: 2px 1px #faf7f794;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    font-size: 72px;
+    padding-bottom: 25px;
+  } 
+
+.experience-tile {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 150px;
+    height: 150px;
+}
+
+.experience-logo {
+    max-width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-image {
+    /* max-width: 1000px; */
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.carousel {
+    height: auto;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.portfolio-container {
+    background: #ecefec;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+.portfolio-title {
+      color: white;
+      text-shadow: 2px 1px #faf7f794;
+      font-family: 'Josefin Slab', serif;
+      text-align: center;
+      font-size: 72px;
+      padding-bottom: 25px;
+  }
+
+.portfolio-link {
+      color: #172832;
+  }
+
+.contact-container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+.contact-title {
+    color: #172832;
+    text-shadow: 1px 1px #faf7f7a1;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    font-size: 72px;
+    padding-bottom: 25px;
+  } 
+
+.contact-link a {
+    color: #172832;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 48px;
+}
+
+footer {
+    text-align: center;
+    color: #172832;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23172832' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23172832' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+@media screen and (max-width: 1370px) {
+    .hero-text {
+        font-size: 110px;
+    }
+  }
+
+@media screen and (max-width: 1115px) {
+    .hero-text {
+        font-size: 80px;
+    }
+
+    .profile-text {
+        width: 400px;
+        left: 65%;
+    }
+
+    .img-profile {
+        left: 15%;
+    }
+  }
+
+@media screen and (max-width: 815px) {
+    .hero-text {
+        font-size: 60px;
+    }
+
+    .hero-icon {
+        max-width: 50px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .about-title, .experience-title, .portfolio-title, .contact-title {
+        font-size: 48px;
+    }
+
+    .profile-text {
+        width: 400px;
+        left: 65%;
+    }
+
+    .img-profile {
+        left: 15%;
+        max-width: 225px;
+    }
+  }
+
+@media screen and (max-width: 615px) {
+    .hero-text {
+        font-size: 40px;
+    }
+
+    .profile-text {
+        /* position: relative; */
+        margin-left: auto;
+        margin-right: auto;
+        left: 50%;
+        width: 100%;
+    }
+
+    .about-me-container {
+        height: 300px;
+    }
+
+    .img-profile {
+        display: none;
+    }
+  }
+
+@media screen and (max-width: 410px) {
+    .hero-text {
+        font-size: 36px;
+    }
+
+    .hero-icon {
+        max-width: 30px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .about-title, .experience-title, .portfolio-title, .contact-title {
+        font-size: 36px;
+    }
+  }
+
